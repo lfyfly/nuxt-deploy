@@ -2,7 +2,7 @@
 注意：nuxt初始化的时候选择一个后端server，本项目选择了koa。`server/index.js`将作为pm2的运行脚本
 
 ## 新增环境变量MY_ENV
-新增环境变量MY_ENV来读取`envConfig.js`内配置（因为我们构建测试环境时，NODE_ENV值应是producttion，与正式保持一致。所以MY_ENV更好地让我们去分多环境）
+新增环境变量MY_ENV来读取`envConfig.js`内配置（因为我们构建测试环境时，NODE_ENV值应是producttion，与正式保持一致。所以MY_ENV更好地让我们区分多环境）
 
 ## 命令
 该项目只配置了test和prod两个环境

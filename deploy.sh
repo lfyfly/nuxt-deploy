@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 脚本报错，直接终端执行
+# 脚本报错，直接中断执行
 set -e
 
 function SuceessEcho(){

@@ -17,7 +17,7 @@
           target="_blank"
           class="button--grey"
         >
-          GitHub lfy 1
+          GitHub lfy 2
         </a>
         <ul>
           <li>NODE_ENV:{{ NODE_ENV }}</li>

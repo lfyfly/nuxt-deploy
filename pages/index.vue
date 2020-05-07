@@ -17,7 +17,7 @@
           target="_blank"
           class="button--grey"
         >
-          GitHub hello
+          GitHub lfy
         </a>
         <ul>
           <li>NODE_ENV:{{ NODE_ENV }}</li>

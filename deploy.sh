@@ -19,12 +19,7 @@ cd $DIR
 echo -e $(SuceessEcho "进入项目目录：$DIR")
 
 echo -e $(SuceessEcho "切换至 $branch 分支")
-git checkout $branch
-
-echo -e $(SuceessEcho "[start] 拉取最新代码")
-git pull origin $branch
-echo -e $(SuceessEcho "[end] 拉取最新代码")
-
+git checkout origin $branch
 
 if [ $npm_install = "yes" ];then
 echo -e $(SuceessEcho "[start] npm install")

@@ -1,3 +1,5 @@
+const env = require('./envConfig')
+
 module.exports = {
   mode: 'universal',
   /*
@@ -52,7 +54,9 @@ module.exports = {
   /*
    ** Build configuration
    */
+  env,
   build: {
+    publicPath: env.PUBLIC_PATH,
     /*
      ** You can extend webpack config here
      */

@@ -6,7 +6,7 @@
         nuxt-deploy
       </h1>
       <h2 class="subtitle">
-        nuxt deploy bash
+        nuxt deploy bash script
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
@@ -17,8 +17,13 @@
           target="_blank"
           class="button--grey"
         >
-          GitHub
+          GitHub hello
         </a>
+        <ul>
+          <li>NODE_ENV:{{ NODE_ENV }}</li>
+          <li>MY_ENV:{{ MY_ENV }}</li>
+          <li>API_BASE:{{ API_BASE }}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -30,6 +35,21 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data() {
+    return {
+      NODE_ENV: process.env.NODE_ENV,
+      MY_ENV: process.env.MY_ENV,
+      API_BASE: process.env.API_BASE
+    }
+  },
+  beforeCreate() {
+    // eslint-disable-next-line no-console
+    console.log('beforeCreate', process.env.API_BASE)
+  },
+  mounted() {
+    // eslint-disable-next-line no-console
+    console.log('mounted', process.env.API_BASE)
   }
 }
 </script>

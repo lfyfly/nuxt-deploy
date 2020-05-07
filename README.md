@@ -1,9 +1,9 @@
 # nuxt-deploy
 
  - 可自定义多环境
- - 可运行交互式命令行进行部署
  - 使用pm2进行守护进程
- - 可直接执行脚本配合jenkins使用
+ - 可运行交互式命令行进行部署
+ - 可配合jenkins使用
 
 注意：使用create-nuxt-app初始化的时候选择一个后端server，本项目选择了koa。`server/index.js`将作为pm2的运行脚本
 

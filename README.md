@@ -1,5 +1,12 @@
 # nuxt-deploy
-注意：nuxt初始化的时候选择一个后端server，本项目选择了koa。`server/index.js`将作为pm2的运行脚本
+
+ - 可自定义多环境
+ - 可运行交互式命令行进行部署
+ - 使用pm2进行守护进程
+ - 可直接执行脚本配合jenkins使用
+
+注意：使用create-nuxt-app初始化的时候选择一个后端server，本项目选择了koa。`server/index.js`将作为pm2的运行脚本
+
 
 ## 新增环境变量MY_ENV
 新增环境变量MY_ENV来读取`envConfig.js`内配置（因为我们构建测试环境时，NODE_ENV值应是producttion，与正式保持一致。所以MY_ENV更好地让我们区分多环境）
